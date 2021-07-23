@@ -39,9 +39,12 @@ Users should be able to:
 
 #### Desktop
 
-![](./screenshot.jpg)
+![tip-calculator-screenshot-desktop](https://user-images.githubusercontent.com/39559163/126788411-01f71d65-2630-4940-97ff-154cac3d5c00.png)
+
 
 #### Mobile
+![tip-calculator-screenshot-mobile](https://user-images.githubusercontent.com/39559163/126788438-ea27ce2c-1b57-4357-950f-ff2260fb0c1c.png)
+
 
 ### Links
 
