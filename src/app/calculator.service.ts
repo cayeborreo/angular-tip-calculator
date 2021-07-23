@@ -59,7 +59,7 @@ export class CalculatorService {
       let tipTotal = bill * ((finalTip || 0) / 100);
       let totalAmount = bill * ((100 + (finalTip || 0)) / 100);
       return {
-        tipTotal: tipTotal,
+        tipTotal: tipTotal / numberOfPeople,
         amountPerPerson: totalAmount / numberOfPeople,
       };
     } else return {};
