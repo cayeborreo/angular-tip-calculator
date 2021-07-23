@@ -1,0 +1,55 @@
+<div class="box box__display-screen is-shadowless">
+  <div
+    class="
+      box box__display-screen
+      is-flex is-flex-direction-column is-shadowless
+      has-text-left has-background-dark has-text-white
+      p-5
+    "
+  >
+    <section name="display-calculator">
+      <div class="columns is-mobile pt-4">
+        <!-- Tip -->
+        <div class="column is-narrow">
+          <p>Tip Amount</p>
+          <p class="is-size-7 has-text-grey-light">/ person</p>
+        </div>
+        <div class="column has-text-right pt-0">
+          <p class="has-text-primary is-size-2">
+            <span class="has-text-sans-serif">₱</span
+            >{{ results.tipTotal | number: "1.2-2" }}
+          </p>
+        </div>
+      </div>
+      <div class="columns is-mobile mb-5">
+        <!-- Totals -->
+        <div class="column is-narrow">
+          <p>Total</p>
+          <p class="is-size-7 has-text-grey-light">/ person</p>
+        </div>
+        <div class="column has-text-right pt-0">
+          <p class="has-text-primary is-size-2">
+            <span class="has-text-sans-serif">₱</span
+            >{{ results.amountPerPerson | number: "1.2-2" }}
+          </p>
+        </div>
+      </div>
+    </section>
+    <button
+      class="
+        button button__reset
+        is-align-self-flex-end is-medium
+        has-text-weight-bold has-text-dark
+        is-primary is-fullwidth
+      "
+      (click)="reset.emit()"
+      [disabled]="
+        !calculatorInput.bill &&
+        !calculatorInput.numberOfPeople &&
+        !(calculatorInput.tipPercent || calculatorInput.customTipPercent)
+      "
+    >
+      RESET
+    </button>
+  </div>
+</div>

@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+// Import variables
+@import "../styles/_variables";
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/helpers/_all.sass";
+
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/box.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/form/_all.sass";
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
+
+// Custom global CSS
+body,
+p,
+div {
+  font-weight: 700;
+}
+
+.logo {
+  margin: 4rem 0;
+}
+
+.label {
+  font-size: $size-7;
+
+  &:not(:first-child) {
+    margin: 0.5rem 0;
+  }
+}
+
+.field {
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.box {
+  &__app {
+    border-radius: 28px;
+  }
+
+  &__display-screen {
+    height: 100%;
+  }
+}
+
+@include mobile {
+  .box {
+    &__app {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &__display-screen {
+      padding-top: 0;
+    }
+  }
+}
+
+.button {
+  &:hover,
+  .is-hovered {
+    background-color: $light-cyan !important;
+    color: $very-dark-cyan !important;
+    // Have to override as Bulma strongly enforces the lighten/darken colors
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $dark-cyan !important;
+  }
+
+  &:active {
+    background-color: $primary !important;
+  }
+
+  &__reset {
+    margin-top: auto;
+    align-self: flex-end;
+  }
+}

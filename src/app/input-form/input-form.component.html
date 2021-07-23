@@ -1,0 +1,95 @@
+<div class="box is-shadowless">
+  <div class="box is-shadowless has-text-left">
+    <form>
+      <div class="field">
+        <label class="label is-flex" for="bill"
+          ><p class="is-flex-grow-1">Bill</p>
+          <p
+            *ngIf="calculatorInput.bill === 0"
+            class="has-text-right has-text-danger"
+          >
+            Can't be zero
+          </p></label
+        >
+        <div class="control has-icons-left">
+          <input
+            [class.is-danger]="calculatorInput.bill === 0"
+            class="input is-medium has-text-right has-text-weight-bold"
+            type="number"
+            step="any"
+            min="1"
+            placeholder="0"
+            name="bill"
+            (keyup)="updateValues($event)"
+            [value]="calculatorInput.bill"
+          />
+          <span class="icon is-left">
+            <g class="m-4" svg-icon-peso></g>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="tipPercent">Select Tip %</label>
+        <div class="columns is-mobile is-multiline is-1 is-variable py-2">
+          <div
+            class="column is-half-mobile is-half-tablet is-4-desktop py-1"
+            *ngFor="let tip of tips"
+          >
+            <button
+              [class.is-primary]="tip.value === calculatorInput.tipPercent"
+              class="button is-medium is-dark has-text-weight-bold is-fullwidth"
+              name="tipPercent"
+              [id]="tip.value"
+              (click)="handleButtonClick($event)"
+            >
+              {{ tip.value }}%
+            </button>
+          </div>
+          <div class="column is-half-mobile is-half-tablet is-4-desktop py-1">
+            <input
+              class="input is-medium has-text-weight-bold has-text-centered"
+              type="number"
+              step="any"
+              max="1000"
+              placeholder="Custom"
+              name="customTipPercent"
+              (keyup)="updateValues($event)"
+              [value]="calculatorInput.customTipPercent"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label is-flex" for="numberOfPeople"
+          ><p class="is-flex-grow-1">Number of People</p>
+          <p
+            *ngIf="calculatorInput.numberOfPeople === 0"
+            class="has-text-right has-text-danger"
+          >
+            Can't be zero
+          </p></label
+        >
+        <div class="control has-icons-left">
+          <input
+            [class.is-danger]="calculatorInput.numberOfPeople === 0"
+            class="input is-medium has-text-right has-text-weight-bold"
+            type="number"
+            step="1"
+            min="1"
+            max="100"
+            maxlength="3"
+            placeholder="0"
+            name="numberOfPeople"
+            (keyup)="updateValues($event)"
+            [value]="calculatorInput.numberOfPeople"
+          />
+          <span class="icon is-left">
+            <g class="m-4" svg-icon-person></g>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

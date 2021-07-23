@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "../../node_modules/bulma/sass/utilities/functions.sass";
+
+// Set your brand colors
+$strong-cyan: hsl(172, 67%, 45%);
+$light-cyan: bulmaLighten($strong-cyan, 35);
+$dark-cyan: bulmaDarken($strong-cyan, 15);
+$very-dark-cyan: hsl(183, 100%, 15%);
+$darker-grayish-cyan: hsl(186, 14%, 43%);
+$dark-grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$lighter-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+// Update Bulma's global variables
+$family-sans-serif: "Space Mono", Courier, monospace;
+$grey-dark: $very-dark-cyan;
+$grey-darker: $very-dark-cyan;
+$grey-light: $dark-grayish-cyan;
+$grey-lighter: $light-grayish-cyan;
+$primary: $strong-cyan;
+$link: $primary;
+$dark: $very-dark-cyan;
+// $body-size: 24px;
+
+// Update some of Bulma's component variables
+$body-background-color: $light-grayish-cyan;
+$box-background-color: $white;
+$box-radius: 12px;
+$control-border-width: 2px;
+$control-padding-vertical: 16px;
+
+$label-color: $darker-grayish-cyan;
+$input-border-color: none;
+$input-focus-border-color: $primary;
+$input-background-color: $lighter-grayish-cyan;
+$input-shadow: none;
+
+// $button-padding-horizontal: 0.75em;
+// $button-padding-vertical: 0.25em;
+$button-hover-color: $light-cyan;
+$button-disabled-background-color: $dark-cyan;

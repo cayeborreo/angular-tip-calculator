@@ -1,0 +1,31 @@
+<div class="columns is-centered mt-5 is-gapless mb-0">
+  <div
+    class="
+      column
+      is-desktop is-12-mobile is-10-tablet is-8-desktop
+      has-text-centered
+    "
+  >
+    <div class="logo">
+      <g svg-logo></g>
+    </div>
+    <div class="box box__app p-2">
+      <div class="columns is-gapless p-0">
+        <div class="column">
+          <app-input-form
+            [calculatorInput]="(calculatorStore.input$ | async)!"
+          ></app-input-form>
+        </div>
+
+        <div class="column">
+          <app-display-screen
+            [calculatorInput]="(calculatorStore.input$ | async)!"
+            [results]="(calculatorStore.results$ | async)!"
+            (reset)="calculatorStore.resetInput()"
+          ></app-display-screen>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
