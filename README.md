@@ -1,6 +1,6 @@
 # Frontend Mentor - Tip calculator app solution
 
-Hi! 👋 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+Hi! 👋 This is a solution (I submitted it [here](https://www.frontendmentor.io/solutions/tip-calculator-solution-using-angular-and-bulma-oyEfCiAKC)) to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## 🤔 Quick note: Why this project?
 
@@ -41,15 +41,14 @@ Users should be able to:
 
 ![tip-calculator-screenshot-desktop](https://user-images.githubusercontent.com/39559163/126788411-01f71d65-2630-4940-97ff-154cac3d5c00.png)
 
-
 #### Mobile
-![tip-calculator-screenshot-mobile](https://user-images.githubusercontent.com/39559163/126788438-ea27ce2c-1b57-4357-950f-ff2260fb0c1c.png)
 
+![tip-calculator-screenshot-mobile](https://user-images.githubusercontent.com/39559163/126788438-ea27ce2c-1b57-4357-950f-ff2260fb0c1c.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [tip-calc.caye.codes](https://tip-calc.caye.codes/)
+- Solution URL on Frontend Mentor: [Tip calc using Angular and Bulma](https://www.frontendmentor.io/solutions/tip-calculator-solution-using-angular-and-bulma-oyEfCiAKC)
 
 ## 👩🏽‍💻 My process
 
