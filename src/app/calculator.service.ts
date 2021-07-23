@@ -78,6 +78,7 @@ export class CalculatorService {
 
   resetInput() {
     this.calculatorInput = initialInputValues;
+    this.calculatorResults = initialOutputValues;
   }
 
   // serviceLog() {
